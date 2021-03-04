@@ -3,12 +3,6 @@ a, h1, h2, h3, h4, h5 {
     text-decoration: none;
 }
 
-
-
-.arrows img {
-    height: 100%;
-    width: auto;
-}
 .card__text {
     padding: 1rem 10px 1rem 10px;
     position: absolute;
@@ -38,7 +32,10 @@ a, h1, h2, h3, h4, h5 {
 
 
 
-#coverContainer {animation: slideBackTheme 2.5s ease;}
+#coverContainer {
+    animation: slideBackTheme 2.5s ease;
+}
+
 @media (min-width: 236px) {
     #header {
         min-height: 46vh;
@@ -82,9 +79,6 @@ a, h1, h2, h3, h4, h5 {
     .padding__tb {
         padding: 3rem 0 1rem 0;
     }
-    .nopad {
-        padding: 1rem 0 0 0;
-    }
 
     .DecorSign {
         height: 3rem;
@@ -100,12 +94,7 @@ a, h1, h2, h3, h4, h5 {
         z-index: 10;
         height: 6rem;
     }
-    .arrows {
-        display: none;
-    }
-    .category img {
-        height: 4rem;
-    }
+
 }
 
 @media (min-width: 456px) {
@@ -115,19 +104,7 @@ a, h1, h2, h3, h4, h5 {
     .DecorPictures {
         height:10rem;
     }
-    .arrows img {
-        height: 3rem;
-        width: auto;
-    }
-    .arrows:nth-child(2) {
-        display: flex;
-    }
-    .arrows:nth-child(5) {
-        display: flex;
-    }
-    .category img {
-        height: 7rem;
-    }
+
     @keyframes sunSlide {
         from {
             margin: 10vh 0 0 0;
@@ -174,22 +151,7 @@ a, h1, h2, h3, h4, h5 {
     #MainContent {
         display: flex!important;
     }
-    .arrows:nth-child(1) {
-        display: flex;
-    }
-    .arrows:nth-child(6) {
-        display: flex;
-    }
-    #arrowPad {
-        padding: 0 2rem 0 2rem;
-    }
-    .arrows img {
-        height: 4rem;
-        width: auto;
-    }
-    .category img {
-        height: 8rem;
-    }
+
     @keyframes sunSlide {
         from {
             margin: 20vh 0 0 0;
@@ -216,18 +178,6 @@ a, h1, h2, h3, h4, h5 {
 }
 
 @media (min-width: 992px) {
-    .arrows:nth-child(1) {
-        display: flex;
-    }
-    .arrows:nth-child(6) {
-        display: flex;
-    }
-    .arrows:nth-child(3) {
-        display: flex;
-    }
-    .arrows:nth-child(4) {
-        display: flex;
-    }
     .DecorSign {
         height: 5rem;
     }
@@ -237,22 +187,7 @@ a, h1, h2, h3, h4, h5 {
     #LogoContainer img{
         height: 10rem;
     }
-    .arrows:nth-child(1) {
-        display: flex;
-    }
-    .arrows:nth-child(6) {
-        display: flex;
-    }
-    #arrowPad {
-        padding: 0 10rem 0 10rem;
-    }
-    .arrows img {
-        height: 3rem;
-        width: auto;
-    }
-    .category img {
-        height: 9rem;
-    }
+
     @keyframes sunSlide {
         from {
             margin: 10vh 0 0 0;
@@ -282,17 +217,6 @@ a, h1, h2, h3, h4, h5 {
     }
     #LogoContainer img{
         height: 15rem;
-    }
-    #arrowPad {
-        padding: 0 12rem 0 12rem;
-    }
-    .arrows img {
-        height: 6rem;
-        width: auto;
-    }
-
-    .category img {
-        height: 10rem;
     }
 }
 

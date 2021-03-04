@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(15, 13, 34);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+}
+#coverContainer {
+    height: 95vh;
+    background: linear-gradient(180deg, #F6EFD2, #CEAD78);
+}
+#covHeader {
+    height: 95vh;
+    background-image: url("../pictures/forest.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@keyframes slideHeader {
+    from {height: 130vh;}
+    to {height: 95vh;}
+}
+#covHeader {animation: slideHeader 1.5s ease;}
+#covContent {height: 5vh;}
+
+@media (min-width: 236px) {
+    #covHeader {background-size: 300%;}
+}
+
+@media (min-width: 768px) {
+    #covHeader {background-size: 200%;}
+}
+
+@media (min-width: 1198px) {
+    body {overflow-y: hidden;}
+    #covHeader {background-size: 100%;}
+}

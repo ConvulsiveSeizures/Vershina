@@ -1,2 +1,0 @@
-# Vershina
- frontend
