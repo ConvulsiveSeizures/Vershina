@@ -1,0 +1,95 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0e23;;
+}
+#themeWrapper{z-index: -10;height: 100%;width: inherit;;background-color: #4c3b6bad; transition: background-color 2.2s ease-out;}
+#themeWrapper.changeTheme {background-color: #e2bd80;}
+#contentWrapper {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-image: url("./forest.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#timeBlur {opacity: 0; transition: opacity 4s ease;}
+#timeBlur.active {opacity: 1;}
+
+@media (min-width: 236px) {
+    #contentWrapper {background-size: 300% auto;}
+    @keyframes contentWrapperBounce {
+        from {background-size: 800% auto;}
+        to {background-size: 300% auto;}
+    }
+    #contentWrapper {animation: contentWrapperBounce 2s ease}
+}
+@media (min-width: 326px) {
+    #contentWrapper {background-size: 240% auto;}
+    @keyframes contentWrapperBounce {
+        from {background-size: 700% auto;}
+        to {background-size: 240% auto;}
+    }
+    #contentWrapper {animation: contentWrapperBounce 2s ease}
+}
+@media (min-width: 426px) {
+    #contentWrapper {background-size: 200% auto;}
+    @keyframes contentWrapperBounce {
+        from {background-size: 570% auto;}
+        to {background-size: 200% auto;}
+    }
+    #contentWrapper {animation: contentWrapperBounce 2s ease}
+}
+@media (min-width: 586px) {
+    #themeWrapper {padding-top: 2rem;}
+    #contentWrapper {background-size: 170% auto;}
+    @keyframes contentWrapperBounce {
+        from {background-size: 500% auto;}
+        to {background-size: 170% auto;}
+    }
+    #contentWrapper {animation: contentWrapperBounce 2s ease}
+}
+@media (min-width: 768px) {
+    #themeWrapper {padding-top: 2rem;}
+    #contentWrapper {background-size: 140% auto;}
+    @keyframes contentWrapperBounce {
+        from {background-size: 300% auto;}
+        to {background-size: 140% auto;}
+    }
+    #contentWrapper {animation: contentWrapperBounce 2s ease}
+}
+@media (min-width: 1232px) {
+    #themeWrapper {padding-top: 1rem;}
+    #contentWrapper {background-size: 120% auto;}
+    @keyframes contentWrapperBounce {
+        from {background-size: 500% auto;}
+        to {background-size: 120% auto;}
+    }
+    #contentWrapper {animation: contentWrapperBounce 2s ease}
+}
+@media (min-width: 1432px) {
+    #themeWrapper {padding-top: 1rem;}
+    #contentWrapper {background-size: 100% auto;}
+    @keyframes contentWrapperBounce {
+        from {background-size: 200% auto;}
+        to {background-size: 100% auto;}
+    }
+    #contentWrapper {animation: contentWrapperBounce 2s ease}
+}
+
+
+@media (min-width: 1432px) {
+    body {overflow-y: hidden;}
+    #themeWrapper {padding-top: 2rem;}
+    #contentWrapper {background-size: 100% auto;}
+    @keyframes contentWrapperBounce {
+        from {background-size: 180% auto;}
+        to {background-size: 100% auto;}
+    }
+    #contentWrapper {animation: contentWrapperBounce 2s ease}
+
+}

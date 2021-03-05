@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="./adaptiveBackground.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link href="./contentAnimates.css" rel="stylesheet">
+    <script src="./script.js"></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!--cntnt wrapper-->
+    <div id="themeWrapper" class="position-absolute">
+      <div id="contentWrapper" class="">
+      </div>
+    </div>
+
+    <content>
+      <div id="timeBlur">
+        <div id="toggleTheme" class="position-absolute top-0 end-0">
+          <div class="buttonMargin">
+            <button class="btn btn-dark" id="btnToggleTheme">toggle</button>
+          </div>
+        </div>
+        <div id="headWrapper" class="container-fluid">
+          <div id="sunIconCont" class="d-flex toggleAbsolute">
+            <div id="sunIcon" class="position-absolute">
+              <img src="./sun.png">
+            </div>
+          </div>
+          <div id="logoWrapper" class="container-fluid justify-content-center pt-5">
+            <div class="container d-flex justify-content-center">
+              <div>
+                <div class="d-flex text-center justify-content-center">
+                  <div class="pt-4 pe-3 tg-color">
+                    <a href="#">INST</a>
+                  </div>
+                  <div class=" pe-3 tg-color">
+                    <a href="#">INST</a>
+                  </div>
+                  <div class="pt-4 tg-color">
+                    <a href="#">INST</a>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="./logo.png" id="logoIcon">
+                </div>
+                <div id="logoLinks" class="toggleFlex flex-wrap text-center pt-2">
+                  <div class="links text-center tg-color">
+                    <a href="#">НАШИ ПРОГРАММЫ</a>
+                  </div>
+                  <div class="links text-center tg-color">
+                    <a href="#">ГЛАВНАЯ</a>
+                  </div>
+                  <div class="links text-center tg-color">
+                    <a href="#">О НАС</a>
+                  </div>
+                  <div class="links text-center tg-color">
+                    <a href="#">КОНТАКТЫ</a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </content>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>

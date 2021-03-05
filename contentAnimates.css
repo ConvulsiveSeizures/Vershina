@@ -1,0 +1,106 @@
+#tg-color a {
+    color: white;
+    transition: color 3s ease-in;
+}
+.tg-color.white a{color: white!important;}
+
+#sunIcon {transition: opacity 2s ease;}
+#sunIcon.goHidden {opacity: 0;}
+
+@media (min-width: 236px) {
+    #sunIconCont {min-height: 66px; width: 90%;}
+    .links a{font-size: 18px!important;}
+    .toggleFlex {display: block;}
+    .toggleAbsolute {position: unset;}
+    #sunIconCont img {height: 8rem; z-index: -1;}
+    #sunIcon {padding: 8rem 0 0 6rem;}
+    @keyframes slideSun {
+        from {padding: 8rem 0 0 0;}
+        50% {padding: 6em 0 0 3rem;}
+        to {padding: 8rem 0 0 6rem;}
+    }
+    #sunIcon {
+        animation-delay: 2s;
+        animation: slideSun 1.7s linear;
+    }
+    #logoIcon {
+        z-index: 1;
+        height: 6rem;
+    }
+    
+}
+@media (min-width: 326px) {
+    .toggleFlex {display: flex;}
+    #sunIcon {padding: 9rem 0 0 54vw;}
+    @keyframes slideSun {
+        from {padding: 9rem 0 0 2rem;}
+        50% {padding: 6em 0 0 30vw;}
+        to {padding: 9rem 0 0 54vw;}
+    }
+    #sunIcon {
+        animation-delay: 2s;
+        animation: slideSun 1.7s linear;
+    }
+}
+@media (min-width: 426px) {
+    .links a{font-size: 22px!important;}
+    .toggleAbsolute {position: absolute!important;}
+    #sunIconCont img {height: 8rem;}
+    #sunIcon {padding: 9rem 0 0 54vw;}
+    @keyframes slideSun {
+        from {padding: 9rem 0 0 0;}
+        50% {padding: 6em 0 0 30vw;}
+        to {padding: 9rem 0 0 54vw;}
+    }
+    #sunIcon {
+        animation-delay: 2s;
+        animation: slideSun 1.7s linear;
+    }
+}
+@media (min-width: 626px) {
+    .toggleAbsolute {position: absolute!important;}
+    #sunIconCont img {height: 8rem;}
+    #sunIcon {padding: 9rem 0 0 70vw;}
+    @keyframes slideSun {
+        from {padding: 9rem 0 0 0;}
+        50% {padding: 6em 0 0 30vw;}
+        to {padding: 9rem 0 0 70vw;}
+    }
+    #sunIcon {
+        animation-delay: 2s;
+        animation: slideSun 2s linear;
+    }
+}
+@media (min-width: 768px) {
+    .toggleAbsolute {position: absolute!important;}
+    #sunIconCont img {height: 10rem;}
+    #sunIcon {padding: 9rem 0 0 66vw;}
+    @keyframes slideSun {
+        from {padding: 9rem 0 0 0;}
+        50% {padding: 6em 0 0 32vw;}
+        to {padding: 9rem 0 0 66vw;}
+    }
+    #sunIcon {
+        animation-delay: 2s;
+        animation: slideSun 1.7s linear;
+    }
+}
+
+@media (min-width: 1232px) {
+    .toggleAbsolute {position: absolute!important;}
+    #sunIconCont img {height: 10rem;}
+    #sunIcon {padding: 9rem 0 0 66vw;}
+    @keyframes slideSun {
+        from {padding: 9rem 0 0 0;}
+        50% {padding: 6em 0 0 42vw;}
+        to {padding: 9rem 0 0 66vw;}
+    }
+    #sunIcon {
+        animation-delay: 2s;
+        animation: slideSun 1.7s linear;
+    }
+    #logoIcon {
+        height: 12rem;
+    }
+    
+}
