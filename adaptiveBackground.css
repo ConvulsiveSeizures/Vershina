@@ -17,7 +17,7 @@ body {
     background-position: bottom;
 }
 
-#timeBlur {opacity: 0; transition: opacity 4s ease;}
+#timeBlur {opacity: 0; transition: opacity 2s ease 1s;}
 #timeBlur.active {opacity: 1;}
 
 @media (min-width: 236px) {
@@ -83,6 +83,7 @@ body {
 
 
 @media (min-width: 1432px) {
+
     body {overflow-y: hidden;}
     #themeWrapper {padding-top: 2rem;}
     #contentWrapper {background-size: 100% auto;}

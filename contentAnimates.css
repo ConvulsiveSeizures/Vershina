@@ -4,13 +4,52 @@
 }
 .tg-color.white a{color: white!important;}
 
-#sunIcon {transition: opacity 2s ease;}
+a {color: white;text-decoration: none;}
+#sunIcon {transition: opacity 2s ease; z-index: -10;}
 #sunIcon.goHidden {opacity: 0;}
 
+#instLink {margin: -10rem 0 0 0; transition: margin 1.2s ease 1.3s;}
+#instLink.dis {margin: 0rem 0 0 0;}
+
+#telegLink {margin: -10rem 0 0 0; transition: margin 1.2s ease 1.5s;}
+#telegLink.dis {margin: 0rem 0 0 0;}
+
+#wpLink {margin: -10rem 0 0 0; transition: margin 1.2s ease 1.8s;}
+#wpLink.dis {margin: 0rem 0 0 0;}
+
+
+
+
+
 @media (min-width: 236px) {
-    #sunIconCont {min-height: 66px; width: 90%;}
+    #galleryWrapper {margin: 14vh 1rem 0 1rem;}
+    .gallery {
+        grid-auto-flow: dense;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 4px;
+    }
+    #dec {display: none!important;}
+    .stars {background-size: 250% auto;}
+    .category h2 {font-size: 13px!important;}
+    .category img {
+        height: 4.7rem;
+        width: auto!important;
+    }
+    .padMap {padding: 1rem;}
+    .mg-top {margin-top: -2rem;}
+    .pd20 { padding-top: 26vh;} 
+    .mapContainer img {width: 90vw; margin-left: -1rem;}
+    #pointContainer {
+        padding-top: 3rem;
+    }
+    #linkCont img {height: 2.5rem;}
+    .links a {color: white; text-shadow: black -1px 2px 4px}
+    .links {padding: 1rem 0.5rem 0 0.7rem;}
+    #sunIconCont { width: 90%;}
     .links a{font-size: 18px!important;}
-    .toggleFlex {display: block;}
+    .toggleFlex {display: block!important;}
     .toggleAbsolute {position: unset;}
     #sunIconCont img {height: 8rem; z-index: -1;}
     #sunIcon {padding: 8rem 0 0 6rem;}
@@ -25,12 +64,16 @@
     }
     #logoIcon {
         z-index: 1;
-        height: 6rem;
+        height: 8rem;
     }
     
 }
 @media (min-width: 326px) {
-    .toggleFlex {display: flex;}
+    .category img {
+        height: 5rem;
+        width: auto!important;
+    }
+    .pd20 { padding-top: 24vh;} 
     #sunIcon {padding: 9rem 0 0 54vw;}
     @keyframes slideSun {
         from {padding: 9rem 0 0 2rem;}
@@ -43,7 +86,21 @@
     }
 }
 @media (min-width: 426px) {
-    .links a{font-size: 22px!important;}
+    
+    .gallery {
+        grid-auto-flow: dense;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .category h2 {font-size: 15px!important;}
+    .category img {
+        height: 5rem;
+        width: auto!important;
+    }
+    .padMap {padding: 2rem;}
+    .links a{font-size: 19px!important;}
     .toggleAbsolute {position: absolute!important;}
     #sunIconCont img {height: 8rem;}
     #sunIcon {padding: 9rem 0 0 54vw;}
@@ -58,8 +115,26 @@
     }
 }
 @media (min-width: 626px) {
+    #galleryWrapper {margin: 14vh 5rem 0 5rem;}
+    .gallery {
+        grid-auto-flow: dense;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4px;
+    }
+    .decImg {height: 8rem;}
+    #dec {display: flex!important;}
+    .pd20 { padding-top: 20vh;} 
+    .category img {
+        height: 6rem;
+        width: auto!important;
+    }
+
+    .mapContainer img {width: 80vw; margin-left: 0;}
+    .toggleFlex {display: flex!important;}
     .toggleAbsolute {position: absolute!important;}
-    #sunIconCont img {height: 8rem;}
+    #sunIconCont img {height: 10rem;}
     #sunIcon {padding: 9rem 0 0 70vw;}
     @keyframes slideSun {
         from {padding: 9rem 0 0 0;}
@@ -70,10 +145,30 @@
         animation-delay: 2s;
         animation: slideSun 2s linear;
     }
+
 }
 @media (min-width: 768px) {
+    #galleryWrapper {margin: 14vh 5rem 0 5rem;}
+    .gallery {
+        grid-auto-flow: dense;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
+    .decImg {height:9rem;}
+    .stars {background-size: 100% auto;}
+    .category h2 {font-size: 17px!important;}
+    .mapContainer {margin-left: 5vw;}
+    .category img {
+        height: 8rem;
+        width: auto!important;
+    }
+    .mapContainer img {width: 76vw;}
+    .links a {color: white; text-shadow: black -1px 1px 4px; font-size: 22px;}
+    .links {padding: 0 0.9rem 0 0.9rem;}
     .toggleAbsolute {position: absolute!important;}
-    #sunIconCont img {height: 10rem;}
+    #sunIconCont img {height: 11rem;}
     #sunIcon {padding: 9rem 0 0 66vw;}
     @keyframes slideSun {
         from {padding: 9rem 0 0 0;}
@@ -84,11 +179,36 @@
         animation-delay: 2s;
         animation: slideSun 1.7s linear;
     }
+    #pointContainer {
+        padding-top: 7rem;
+    }
+    .category img {
+        height: 8rem;
+        width: auto!important;
+    }
 }
 
 @media (min-width: 1232px) {
+    #galleryWrapper {margin: 14vh 10rem 0 10rem;}
+    .gallery {
+        grid-auto-flow: dense;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 7px;
+    }
+    .decImg {height:11rem;}
+    .category h2 {font-size: 18px!important;}
+    .mapContainer {margin-left: 10vw;}
+    .category img {
+        height: 12rem;
+        width: auto!important;
+    }
+    #pointContainer {
+        padding-top: 15rem;
+    }
     .toggleAbsolute {position: absolute!important;}
-    #sunIconCont img {height: 10rem;}
+    #sunIconCont img {height: 12rem;}
     #sunIcon {padding: 9rem 0 0 66vw;}
     @keyframes slideSun {
         from {padding: 9rem 0 0 0;}
@@ -102,5 +222,31 @@
     #logoIcon {
         height: 12rem;
     }
-    
+
+    .slide {margin: -20rem 0 8rem 0; transition: margin 1.7s ease 0.7s;}
+    .slide.dis {margin: 0 0 0 0;}
+
+    .category img {
+        height: 10rem;
+        width: auto!important;
+    }
+    .mapContainer img {width: 60vw;}
+}
+
+@media (min-width: 1768px) {
+    #galleryWrapper {margin: 14vh 10vw 0 10vw;}
+    .gallery {
+        grid-auto-flow: dense;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    .decImg {height:13rem;}
+    .category h2 {font-size: 25px!important;}
+    .category img {
+        height: 12rem;
+        width: auto!important;
+    }
+    .mapContainer {margin-left: 2vw;}
 }

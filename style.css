@@ -1,7 +1,7 @@
 #sunIcon h1 {
     color: whitesmoke!important;
 }
-a {color: white; text-shadow: black -1px 1px 4px; text-decoration: none; font-size: 22px;}
+
 
 .buttonMargin {margin: 2vh 2vh 0 0;}
 
@@ -10,5 +10,79 @@ a {color: white; text-shadow: black -1px 1px 4px; text-decoration: none; font-si
     padding: 2rem 1rem 0 1rem;
 }
 
-.links {padding: 0 2rem 0 2rem;}
+#pointContainer img {
+    height: 8rem;
+}
+
+
+.mapContainer {
+    display: none;
+    transition: display 1s ease;
+}
+
+
+.mapContainer.active {
+    display: flex;
+}
+
+#themeWrapper.timeBlur {
+    background: #1f1f1f;
+    z-index: 20;
+    opacity: 0.9;
+}
+
+#mapWrapper.toview {z-index: 100!important;}
+
+.h100 {height: 100%;}
+
+.gridCategory {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+#starscnt {
+    min-height: 30vh;
+}
+.stars {
+    transition: opacity 1.7s ease 1s;
+    opacity: 0;
+    background-repeat: no-repeat;
+    min-height: 26vh;
+    min-width: 30vw;
+    background-size: 100% auto;
+    background-image: url("./media/stars.png");
+}
+.stars.themeTrue {
+    opacity: 1;
+}
+
+
+
+#gallerySection {
+    display: none!important;
+    z-index: -300;
+}
+
+#gallerySection.frontview {
+    height: 100%;
+    display: flex!important;
+    z-index: 200;
+}
+
+#galleryWrapper {
+    overflow-y: scroll;
+    background-color: #bfa570;
+    min-height: 70vh;
+}
+
+#galleryWrapper.tgColor {
+    background-color: #47354e;
+}
+
+#closeGallery {min-height: 40px; min-width: 100%;}
+.grid {display: grid;}
+.gallery__img {width: 100%;}
 
