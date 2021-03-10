@@ -86,3 +86,15 @@
 .grid {display: grid;}
 .gallery__img {width: 100%;}
 
+.gallery__item {
+    overflow: hidden;
+}
+.gallery img {
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+}
+.gallery img:hover {
+    transform: scale(1.2);
+}
+
+#closeGalleryBtn {z-index: 300;}
