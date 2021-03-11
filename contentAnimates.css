@@ -42,7 +42,7 @@ a {color: white;text-decoration: none;}
     .pd20 { padding-top: 26vh;} 
     .mapContainer img {width: 90vw; margin-left: -1rem;}
     #pointContainer {
-        padding-top: 3rem;
+        padding-top: 14rem;
     }
     #linkCont img {height: 2.5rem;}
     .links a {color: white; text-shadow: black -1px 2px 4px}
@@ -74,11 +74,11 @@ a {color: white;text-decoration: none;}
         width: auto!important;
     }
     .pd20 { padding-top: 24vh;} 
-    #sunIcon {padding: 9rem 0 0 54vw;}
+    #sunIcon {padding: 15rem 0 0 54vw;}
     @keyframes slideSun {
-        from {padding: 9rem 0 0 2rem;}
+        from {padding: 15rem 0 0 2rem;}
         50% {padding: 6em 0 0 30vw;}
-        to {padding: 9rem 0 0 54vw;}
+        to {padding: 15rem 0 0 54vw;}
     }
     #sunIcon {
         animation-delay: 2s;
@@ -168,12 +168,12 @@ a {color: white;text-decoration: none;}
     .links a {color: white; text-shadow: black -1px 1px 4px; font-size: 22px;}
     .links {padding: 0 0.9rem 0 0.9rem;}
     .toggleAbsolute {position: absolute!important;}
-    #sunIconCont img {height: 11rem;}
-    #sunIcon {padding: 9rem 0 0 66vw;}
+    #sunIconCont img {height: 9rem;}
+    #sunIcon {padding: 2rem 0 0 66vw;}
     @keyframes slideSun {
-        from {padding: 9rem 0 0 0;}
-        50% {padding: 6em 0 0 32vw;}
-        to {padding: 9rem 0 0 66vw;}
+        from {padding: 2rem 0 0 0;}
+        50% {padding: 1em 0 0 32vw;}
+        to {padding: 2rem 0 0 66vw;}
     }
     #sunIcon {
         animation-delay: 2s;
@@ -189,6 +189,7 @@ a {color: white;text-decoration: none;}
 }
 
 @media (min-width: 1232px) {
+    #dec {display: none!important}
     #galleryWrapper {margin: 14vh 10rem 0 10rem;}
     .gallery {
         grid-auto-flow: dense;
@@ -205,22 +206,22 @@ a {color: white;text-decoration: none;}
         width: auto!important;
     }
     #pointContainer {
-        padding-top: 15rem;
+        padding-top: 7rem;
     }
     .toggleAbsolute {position: absolute!important;}
     #sunIconCont img {height: 12rem;}
-    #sunIcon {padding: 9rem 0 0 66vw;}
+    #sunIcon {padding: 4rem 0 0 66vw;}
     @keyframes slideSun {
-        from {padding: 9rem 0 0 0;}
-        50% {padding: 6em 0 0 42vw;}
-        to {padding: 9rem 0 0 66vw;}
+        from {padding: 4rem 0 0 0;}
+        50% {padding: 2em 0 0 42vw;}
+        to {padding: 4rem 0 0 66vw;}
     }
     #sunIcon {
         animation-delay: 2s;
         animation: slideSun 1.7s linear;
     }
     #logoIcon {
-        height: 12rem;
+        height: 10rem;
     }
 
     .slide {margin: -20rem 0 8rem 0; transition: margin 1.7s ease 0.7s;}
@@ -234,6 +235,7 @@ a {color: white;text-decoration: none;}
 }
 
 @media (min-width: 1768px) {
+    #dec {display: flex!important}
     #galleryWrapper {margin: 14vh 10vw 0 10vw;}
     .gallery {
         grid-auto-flow: dense;

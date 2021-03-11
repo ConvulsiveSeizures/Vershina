@@ -54,20 +54,20 @@ body {
     #contentWrapper {animation: contentWrapperBounce 2s ease}
 }
 @media (min-width: 768px) {
-    #themeWrapper {padding-top: 2rem;}
-    #contentWrapper {background-size: 140% auto;}
+    #themeWrapper {padding-top: 7rem;}
+    #contentWrapper {background-size: 130% auto;}
     @keyframes contentWrapperBounce {
         from {background-size: 300% auto;}
-        to {background-size: 140% auto;}
+        to {background-size: 130% auto;}
     }
     #contentWrapper {animation: contentWrapperBounce 2s ease}
 }
 @media (min-width: 1232px) {
-    #themeWrapper {padding-top: 1rem;}
-    #contentWrapper {background-size: 120% auto;}
+    #themeWrapper {padding-top: 5rem;}
+    #contentWrapper {background-size: 110% auto;}
     @keyframes contentWrapperBounce {
         from {background-size: 500% auto;}
-        to {background-size: 120% auto;}
+        to {background-size: 110% auto;}
     }
     #contentWrapper {animation: contentWrapperBounce 2s ease}
 }
