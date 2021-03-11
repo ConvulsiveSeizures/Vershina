@@ -21,8 +21,6 @@ $(document).ready(() => {
     $(".pointBtn").on("click", (e) => {
         $("body").css("overflowY", "hidden")
         let curId = e.target.dataset["id"]
-        //set z-index
-        console.log(e.target)
         $("#mapWrapper").addClass("toview")
         $("#themeWrapper").addClass("timeBlur")
         $(`.mapContainer[data-id=${curId}]`).addClass("active")

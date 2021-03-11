@@ -43,6 +43,9 @@
 }
 
 
+
+#linkCont a {z-index: 100;}
+
 #starscnt {
     min-height: 30vh;
 }
@@ -91,7 +94,7 @@
 }
 .gallery img {
     overflow: hidden;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .gallery img:hover {
     transform: scale(1.2);
